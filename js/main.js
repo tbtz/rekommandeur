@@ -34,7 +34,7 @@ window.addEventListener('load', () => {
     document.addEventListener('keydown', handleKeyDown);
 
     let horn;
-    horn = new Pizzicato.Sound('/assets/horn.mp3');
+    horn = new Pizzicato.Sound('assets/horn.mp3');
     horn.addEffect(new Pizzicato.Effects.Reverb({
       time: 1,
       decay: 3,
@@ -45,7 +45,7 @@ window.addEventListener('load', () => {
       {
         source: 'file',
         options: {
-          path: '/assets/music.m4a',
+          path: 'assets/music.m4a',
           volume: 0.6
         }
       }, () => {
